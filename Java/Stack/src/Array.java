@@ -86,10 +86,7 @@ public class Array<E> {
 
     // 查找数组中是否有元素e
     public boolean contains(E e) {
-        if(find(e) >= 0) {
-            return true;
-        }
-        return false;
+        return find(e) >= 0;
     }
 
     // 从数组中删除index位置的元素, 返回删除的元素

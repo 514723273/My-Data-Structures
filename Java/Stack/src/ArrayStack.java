@@ -1,5 +1,5 @@
 public class ArrayStack<E> implements Stack<E> {
-    Array<E> array;
+    private Array<E> array;
 
     public ArrayStack(int capacity) {
         array = new Array<>(capacity);
