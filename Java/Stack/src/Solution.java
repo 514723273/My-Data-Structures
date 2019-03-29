@@ -10,15 +10,13 @@ public class Solution {
                     return false;
                 }
 
-                char stackTop = arrayStack.peek();
-                if(c == ')' && stackTop == '(') {
-                    arrayStack.pop();
-                } else if(c == ']' && stackTop == '[') {
-                    arrayStack.pop();
-                } else if(c == '}' && stackTop == '{') {
-                    arrayStack.pop();
-                } else {
-                    arrayStack.push(c);
+                char stackTop = arrayStack.pop();
+                if(c == ')' && stackTop != '(') {
+                    return false;
+                } else if(c == ']' && stackTop != '[') {
+                    return false;
+                } else if(c == '}' && stackTop != '{') {
+                    return false;
                 }
             }
         }
