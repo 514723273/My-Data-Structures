@@ -38,6 +38,7 @@ public class ArrayQueue<E> implements Queue<E> {
         return array.getCapacity();
     }
 
+    @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
 
