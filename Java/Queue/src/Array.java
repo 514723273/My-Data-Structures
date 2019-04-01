@@ -75,6 +75,14 @@ public class Array<E> {
         return data[index];
     }
 
+    public E getFirst() {
+        return get(0);
+    }
+
+    public E getLast() {
+        return get(size - 1);
+    }
+
     public int find(E e) {
         for(int i = 0; i < size; i ++) {
             if(data[i].equals(e)) {
@@ -89,6 +97,14 @@ public class Array<E> {
 
     public boolean isEmpty() {
         return size == 0;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public int getCapacity() {
+        return data.length;
     }
 
     @Override
