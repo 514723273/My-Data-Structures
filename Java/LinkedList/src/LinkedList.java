@@ -3,8 +3,9 @@ public class LinkedList<E> {
     // add[0, size], remove[0, size), get[0, size), set[0, size)方法中的判断index合法性都在getNode中体现
     // 只有add范围包括size，其余操作都是针对已有元素
     private class Node {
-        public E e;
-        public Node next;
+        //外围类可以访问自己的内部类的private成员
+        private E e;
+        private Node next;
 
         public Node(E e, Node next) {
             this.e = e;
