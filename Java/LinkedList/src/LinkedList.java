@@ -85,6 +85,14 @@ public class LinkedList<E> {
         return getNode(index).e;
     }
 
+    public E getFirst() {
+        return get(0);
+    }
+
+    public E getLast() {
+        return get(size - 1);
+    }
+
     public boolean isEmpty() {
         return size == 0;
     }
